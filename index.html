@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Encanto - Repostería Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-birthday-cake"></i>
+                <h1>Dulce Encanto</h1>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <button id="addProductBtn" class="btn-add-product-header" style="display: none;">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Agregar Producto</span>
+                </button>
+                <button id="loginBtn" class="btn-login">
+                    <i class="fas fa-user"></i>
+                    <span id="loginText">Iniciar Sesión</span>
+                </button>
+                <button id="cartBtn" class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con Carrusel Mejorado -->
+    <section id="inicio" class="hero">
+        <div class="hero-background"></div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="slide-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=1920&h=900&fit=crop&q=90"
+                            alt="Cupcakes artesanales coloridos" class="slide-image">
+                    </div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">✨ Especialidad</span>
+                            <h2 class="slide-title">Cupcakes de Ensueño</h2>
+                            <p class="slide-description">Sabores únicos con decoraciones espectaculares hechas a mano</p>
+                            <div class="slide-features">
+                                <span class="feature"><i class="fas fa-check-circle"></i> 100% Artesanal</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> Ingredientes Premium</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> Diseños Personalizados</span>
+                            </div>
+                            <div class="slide-actions">
+                                <button class="btn-primary" onclick="scrollToProducts()">
+                                    <i class="fas fa-shopping-bag"></i> Ver Productos
+                                </button>
+                                <button class="btn-secondary" onclick="scrollToProducts()"></button>
+                                    <i class="fas fa-info-circle"></i> Más Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1920&h=900&fit=crop&q=90"
+                            alt="Tortas elegantes" class="slide-image">
+                    </div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">🎂 Celebraciones</span>
+                            <h2 class="slide-title">Tortas de Celebración</h2>
+                            <p class="slide-description">Diseños únicos para hacer tus momentos inolvidables</p>
+                            <div class="slide-features">
+                                <span class="feature"><i class="fas fa-check-circle"></i> Diseños Exclusivos</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> Sabores Variados</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> Entrega a Domicilio</span>
+                            </div>
+                            <div class="slide-actions">
+                                <button class="btn-primary" onclick="scrollToProducts()">
+                                    <i class="fas fa-shopping-bag"></i> Ver Productos
+                                </button>
+                                <button class="btn-secondary" onclick="scrollToProducts()">
+                                    <i class="fas fa-info-circle"></i> Más Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=1920&h=900&fit=crop&q=90"
+                            alt="Macarons franceses" class="slide-image">
+                    </div>
+                    <div class="slide-content-wrapper">
+                        <div class="slide-content">
+                            <span class="slide-badge">🌈 Delicadeza Francesa</span>
+                            <h2 class="slide-title">Macarons Artesanales</h2>
+                            <p class="slide-description">Delicadeza francesa en cada bocado perfecto</p>
+                            <div class="slide-features">
+                                <span class="feature"><i class="fas fa-check-circle"></i> Receta Tradicional</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> 15+ Sabores</span>
+                                <span class="feature"><i class="fas fa-check-circle"></i> Textura Perfecta</span>
+                            </div>
+                            <div class="slide-actions">
+                                <button class="btn-primary" onclick="scrollToProducts()">
+                                    <i class="fas fa-shopping-bag"></i> Ver Productos
+                                </button>
+                                <button class="btn-secondary" onclick="scrollToProducts()">
+                                    <i class="fas fa-info-circle"></i> Más Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del Carrusel -->
+            <div class="carousel-controls">
+                <button class="carousel-nav prev" onclick="changeSlide(-1)" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav next" onclick="changeSlide(1)" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Indicadores Mejorados -->
+            <div class="carousel-pagination">
+                <button class="pagination-dot active" onclick="currentSlide(1)" aria-label="Slide 1">
+                    <span class="dot-inner"></span>
+                </button>
+                <button class="pagination-dot" onclick="currentSlide(2)" aria-label="Slide 2">
+                    <span class="dot-inner"></span>
+                </button>
+                <button class="pagination-dot" onclick="currentSlide(3)" aria-label="Slide 3">
+                    <span class="dot-inner"></span>
+                </button>
+            </div>
+
+            <!-- Progreso del Carrusel -->
+            <div class="carousel-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos para Clientes -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+
+            <!-- Panel de Administración (solo visible para admin) -->
+            <div id="adminPanel" class="admin-panel" style="display: none;">
+                <div class="admin-header">
+                    <h3><i class="fas fa-plus-circle"></i> Panel de Administración</h3>
+                    <button id="toggleAdminPanel" class="btn-toggle">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+
+                <div class="admin-content">
+                    <div class="admin-tabs">
+                        <button class="tab-btn active" data-tab="add-product">
+                            <i class="fas fa-plus"></i> Agregar Producto
+                        </button>
+                        <button class="tab-btn" data-tab="manage-products">
+                            <i class="fas fa-edit"></i> Gestionar Productos
+                        </button>
+                        <button class="tab-btn" data-tab="image-helper">
+                            <i class="fas fa-image"></i> Ayuda con Imágenes
+                        </button>
+                    </div>
+
+                    <!-- Tab: Agregar Producto -->
+                    <div id="add-product" class="tab-content active">
+                        <form id="productForm" class="product-form">
+                            <div class="form-group">
+                                <label for="productName">Nombre del Producto</label>
+                                <input type="text" id="productName" placeholder="Ej: Cupcakes de Chocolate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productPrice">Precio ($)</label>
+                                <input type="number" id="productPrice" placeholder="15.99" step="0.01" min="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productCategory">Categoría</label>
+                                <select id="productCategory" required>
+                                    <option value="">Seleccionar categoría</option>
+                                    <option value="cupcakes">Cupcakes</option>
+                                    <option value="tortas">Tortas</option>
+                                    <option value="galletas">Galletas</option>
+                                    <option value="macarons">Macarons</option>
+                                    <option value="donuts">Donuts</option>
+                                    <option value="cheesecakes">Cheesecakes</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productImage">URL de la Imagen</label>
+                                <input type="url" id="productImage" placeholder="https://images.unsplash.com/..."
+                                    required>
+                                <small>Usa imágenes de alta calidad (recomendado: 400x300px mínimo)</small>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productDescription">Descripción</label>
+                                <textarea id="productDescription"
+                                    placeholder="Describe tu producto de manera atractiva..." required
+                                    rows="4"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productIngredients">Ingredientes (opcional)</label>
+                                <textarea id="productIngredients" placeholder="Lista los ingredientes principales..."
+                                    rows="2"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" id="previewProduct" class="btn-preview">
+                                    <i class="fas fa-eye"></i> Vista Previa
+                                </button>
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-plus"></i> Agregar Producto
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Tab: Gestionar Productos -->
+                    <div id="manage-products" class="tab-content">
+                        <div class="products-manager">
+                            <div class="manager-header">
+                                <h4>Productos Existentes</h4>
+                                <div class="manager-actions">
+                                    <input type="text" id="searchProducts" placeholder="Buscar productos...">
+                                    <select id="filterCategory">
+                                        <option value="">Todas las categorías</option>
+                                        <option value="cupcakes">Cupcakes</option>
+                                        <option value="tortas">Tortas</option>
+                                        <option value="galletas">Galletas</option>
+                                        <option value="macarons">Macarons</option>
+                                        <option value="donuts">Donuts</option>
+                                        <option value="cheesecakes">Cheesecakes</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="productsManagerList" class="products-list">
+                                <!-- Lista de productos para gestionar -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Ayuda con Imágenes -->
+                    <div id="image-helper" class="tab-content">
+                        <div class="image-helper">
+                            <h4><i class="fas fa-lightbulb"></i> Consejos para Imágenes</h4>
+                            <div class="helper-content">
+                                <div class="tip-card">
+                                    <h5>Fuentes Recomendadas:</h5>
+                                    <ul>
+                                        <li><a href="https://unsplash.com/s/photos/cupcakes" target="_blank">Unsplash -
+                                                Cupcakes</a></li>
+                                        <li><a href="https://unsplash.com/s/photos/cakes" target="_blank">Unsplash -
+                                                Tortas</a></li>
+                                        <li><a href="https://unsplash.com/s/photos/macarons" target="_blank">Unsplash -
+                                                Macarons</a></li>
+                                        <li><a href="https://unsplash.com/s/photos/donuts" target="_blank">Unsplash -
+                                                Donuts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tip-card">
+                                    <h5>Formato de URL:</h5>
+                                    <p>Para Unsplash, usa este formato:</p>
+                                    <code>https://images.unsplash.com/photo-ID?w=400&h=300&fit=crop&q=80</code>
+                                </div>
+                                <div class="tip-card">
+                                    <h5>Consejos:</h5>
+                                    <ul>
+                                        <li>Usa imágenes con buena iluminación</li>
+                                        <li>Prefiere fondos neutros o pasteles</li>
+                                        <li>Asegúrate de que la imagen sea clara y apetitosa</li>
+                                        <li>Tamaño recomendado: 400x300px o superior</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de Vista Previa -->
+            <div id="previewModal" class="modal">
+                <div class="modal-content preview-modal">
+                    <span class="close">&times;</span>
+                    <h2>Vista Previa del Producto</h2>
+                    <div id="previewContent" class="preview-content">
+                        <!-- Vista previa se genera aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Test de Imagen -->
+    <div id="imageTestModal" class="modal">
+        <div class="modal-content image-test-modal">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-image"></i> Prueba de Imagen</h2>
+            <div id="imageTestContent" class="image-test-content">
+                <!-- Test de imagen se muestra aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Vista Previa de Nuevo Producto -->
+    <div id="newProductPreviewModal" class="modal">
+        <div class="modal-content preview-modal">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-eye"></i> Vista Previa del Producto</h2>
+            <div id="newProductPreviewContent" class="preview-content">
+                <!-- Vista previa del nuevo producto -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Agregar Producto desde Header -->
+    <div id="quickAddProductModal" class="modal">
+        <div class="modal-content quick-add-modal">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2><i class="fas fa-plus-circle"></i> Agregar Producto Rápido</h2>
+                <p>Agrega un nuevo producto a tu repostería de forma rápida y sencilla</p>
+            </div>
+
+            <form id="quickProductForm" class="quick-product-form">
+                <div class="quick-form-grid">
+                    <div class="quick-form-group">
+                        <label for="quickProductName">
+                            <i class="fas fa-tag"></i> Nombre del Producto *
+                        </label>
+                        <input type="text" id="quickProductName" placeholder="Ej: Cupcakes de Vainilla" required>
+                    </div>
+
+                    <div class="quick-form-group">
+                        <label for="quickProductPrice">
+                            <i class="fas fa-dollar-sign"></i> Precio ($) *
+                        </label>
+                        <input type="number" id="quickProductPrice" placeholder="15.99" step="0.01" min="0" required>
+                    </div>
+
+                    <div class="quick-form-group full-width">
+                        <label for="quickProductImage">
+                            <i class="fas fa-image"></i> URL de la Imagen *
+                        </label>
+                        <div class="image-input-group">
+                            <input type="url" id="quickProductImage" placeholder="https://images.unsplash.com/..."
+                                required>
+                            <button type="button" id="quickTestImage" class="btn-quick-test">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div id="quickImagePreview" class="quick-image-preview"></div>
+                    </div>
+
+                    <div class="quick-form-group">
+                        <label for="quickProductCategory">
+                            <i class="fas fa-list"></i> Categoría
+                        </label>
+                        <select id="quickProductCategory">
+                            <option value="">Seleccionar...</option>
+                            <option value="cupcakes">🧁 Cupcakes</option>
+                            <option value="tortas">🎂 Tortas</option>
+                            <option value="galletas">🍪 Galletas</option>
+                            <option value="macarons">🌈 Macarons</option>
+                            <option value="donuts">🍩 Donuts</option>
+                            <option value="cheesecakes">🍰 Cheesecakes</option>
+                            <option value="brownies">🍫 Brownies</option>
+                            <option value="muffins">🧁 Muffins</option>
+                            <option value="otros">🍯 Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="quick-form-group full-width">
+                        <label for="quickProductDescription">
+                            <i class="fas fa-align-left"></i> Descripción *
+                        </label>
+                        <textarea id="quickProductDescription" placeholder="Describe tu producto de manera atractiva..."
+                            required rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="quick-form-actions">
+                    <button type="button" id="quickClearForm" class="btn-quick-clear">
+                        <i class="fas fa-eraser"></i> Limpiar
+                    </button>
+                    <button type="button" id="quickPreviewProduct" class="btn-quick-preview">
+                        <i class="fas fa-eye"></i> Vista Previa
+                    </button>
+                    <button type="submit" class="btn-quick-add">
+                        <i class="fas fa-plus"></i> Agregar Producto
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="productGrid" class="product-grid">
+        <!-- Los productos se cargarán dinámicamente -->
+    </div>
+    </div>
+    </section>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="#" id="registerLink">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Crear Cuenta</h2>
+            <form id="registerForm">
+                <input type="text" id="regName" placeholder="Nombre completo" required>
+                <input type="email" id="regEmail" placeholder="Correo electrónico" required>
+                <input type="password" id="regPassword" placeholder="Contraseña" required>
+                <button type="submit">Crear Cuenta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0.00</span></h3>
+                <button id="checkoutBtn" class="btn-checkout">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dulce Encanto</h3>
+                    <p>Creando momentos dulces desde 2020</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@dulceencanto.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
