@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset - Dulce Encanto</title>
+</head>
+<body>
+    <h1>Limpiando datos...</h1>
+    <script>
+        localStorage.removeItem('bakeryProducts');
+        localStorage.removeItem('bakeryCart');
+        localStorage.removeItem('bakeryUser');
+        alert('Datos limpiados. Ahora vuelve a index.html');
+        window.location.href = 'index.html';
+    </script>
+</body>
+</html>

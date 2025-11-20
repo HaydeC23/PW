@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+        const products = {
+            reposteria: [
+                { id: 1, name: "Test", price: 3.50, image: "https://via.placeholder.com/400x300" }
+            ]
+        };
+        
+        const grid = document.getElementById('test');
+        products.reposteria.forEach(product => {
+            const card = document.createElement('div');
+            card.innerHTML = `<p>${product.name} - $${product.price}</p>`;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
