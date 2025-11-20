@@ -11,41 +11,41 @@ let products = {
 const initialProducts = {
     reposteria: [
         { id: 1, name: "Cheesecake de Maracuyá", price: 11.99, image: "https://i.pinimg.com/736x/2f/da/39/2fda39f79e80a91d61e69e31bed31605.jpg" },
-        { id: 2, name: "Cupcake de Chocolate", price: 3.50, image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&h=300&fit=crop" },
-        { id: 3, name: "Cupcake Red Velvet", price: 4.00, image: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400&h=300&fit=crop" },
-        { id: 4, name: "Torta de Chocolate", price: 45.00, image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" },
-        { id: 5, name: "Torta de Fresa", price: 42.00, image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop" },
-        { id: 6, name: "Cheesecake Clásico", price: 38.00, image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400&h=300&fit=crop" },
-        { id: 7, name: "Macarons Franceses", price: 24.00, image: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=400&h=300&fit=crop" },
-        { id: 8, name: "Donas Glaseadas", price: 2.50, image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" },
-        { id: 9, name: "Brownies de Chocolate", price: 18.00, image: "https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=400&h=300&fit=crop" },
-        { id: 10, name: "Tarta de Manzana", price: 35.00, image: "https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=400&h=300&fit=crop" }
+        { id: 2, name: "Brownies", price: 0.99, image: "https://i.pinimg.com/736x/80/f1/72/80f17283179869fff96dd0265feeca6b.jpg" },
+        { id: 3, name: "Flan", price: 1.99, image: "https://i.pinimg.com/736x/53/d7/55/53d755814f25108a379df91451264eee.jpg" },
+        { id: 4, name: "Pastel de zanahoria", price: 15.99, image: "https://i.pinimg.com/736x/72/b9/3a/72b93a13c258cdb5a954768c252938c6.jpg" },
+        { id: 5, name: "Pastel de chocolate", price: 19.99, image: "https://i.pinimg.com/1200x/81/d1/a5/81d1a5e9ab4fa39f206f4c90e711df4f.jpg" },
+        { id: 6, name: "Pastel red velvet", price: 14.99, image: "https://i.pinimg.com/736x/8a/1e/b6/8a1eb6049e5e19d9383bdd3043c096d8.jpg" },
+        { id: 7, name: "Rebanada de postre tres leches", price: 1.50, image: "https://i.pinimg.com/1200x/cf/99/33/cf993358a182e48e5c345ea3d1f328ea.jpg" },
+        { id: 8, name: "Donas Gourmet", price: 2.50, image: "https://i.pinimg.com/1200x/ea/66/93/ea66938d7bc0e38d808e51ab08504e84.jpg" },
+        { id: 9, name: "Carlota de limón", price: 11.99, image: "https://i.pinimg.com/736x/eb/22/00/eb2200225289ebfbfec27fdf739674bc.jpg" },
+        { id: 10, name: "Pie de Limón", price: 10.99, image: "https://i.pinimg.com/736x/0b/c5/c8/0bc5c83f9c47650503e6fbeaa4992d0b.jpg" }
     ],
     panaderia: [
-        { id: 11, name: "Pan Francés", price: 2.50, image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop" },
-        { id: 12, name: "Croissant de Mantequilla", price: 3.00, image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" },
-        { id: 13, name: "Pan Integral", price: 3.50, image: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=300&fit=crop" },
-        { id: 14, name: "Baguette Francesa", price: 2.00, image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=300&fit=crop" },
-        { id: 15, name: "Pan de Centeno", price: 4.00, image: "https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=400&h=300&fit=crop" },
-        { id: 16, name: "Bagels Artesanales", price: 2.50, image: "https://images.unsplash.com/photo-1551106652-a5bcf4b29f51?w=400&h=300&fit=crop" },
-        { id: 17, name: "Focaccia Italiana", price: 5.00, image: "https://images.unsplash.com/photo-1600289031464-74d374b64991?w=400&h=300&fit=crop" },
-        { id: 18, name: "Pan de Masa Madre", price: 6.00, image: "https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=400&h=300&fit=crop" },
-        { id: 19, name: "Pretzel Alemán", price: 2.80, image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop" },
-        { id: 20, name: "Empanadas Caseras", price: 3.00, image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop" }
+        { id: 11, name: "bagels de salmon", price: 2.50, image: "https://i.pinimg.com/736x/d8/d2/0d/d8d20d68b88de5e84199f593172fdfeb.jpg" },
+        { id: 12, name: "Croissant de jamón y queso", price: 2.50, image: "https://i.pinimg.com/736x/57/f7/b9/57f7b921ad2b432f2be85e8b393ee571.jpg" },
+        { id: 13, name: "Plantintá", price: 0.99, image: "https://i.pinimg.com/1200x/f3/96/fd/f396fd6e5b5428325d81bffef76244b1.jpg" },
+        { id: 14, name: "Empanada de Pollo", price: 0.99, image: "https://i.pinimg.com/1200x/c1/0b/05/c10b05872d00ac7a79a33e56750a664f.jpg" },
+        { id: 15, name: "Pan de ajo", price: 0.99, image: "https://i.pinimg.com/1200x/58/5b/b7/585bb77bcceae48e050e6184395334bf.jpg" },
+        { id: 16, name: "Sandwich de Pollo", price: 1.99, image: "https://i.pinimg.com/736x/1e/a7/a2/1ea7a2ff13305cc691c17ddfbe1952a4.jpg" },
+        { id: 17, name: "Focaccia", price: 2.50, image: "https://i.pinimg.com/736x/85/5a/dc/855adcec0bd5de1efae320cf93c84a9e.jpg" },
+        { id: 18, name: "Pan pita relleno", price: 1.99, image: "https://i.pinimg.com/1200x/8d/a8/3b/8da83bded588023f71301f51a5b56a2d.jpg" },
+        { id: 19, name: "Pretzel", price: 1.80, image: "https://i.pinimg.com/736x/58/7d/57/587d57c3936d5754a7c38e396ee0c081.jpg" },
+        { id: 20, name: "Pan pizza", price: 1.99, image: "https://i.pinimg.com/1200x/d4/15/3c/d4153cb1c95df230684bd4c688e79998.jpg" }
     ],
     bebidas: [
-        { id: 21, name: "Café Americano", price: 2.50, image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" },
-        { id: 22, name: "Café Latte", price: 3.50, image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" },
-        { id: 23, name: "Cappuccino", price: 3.50, image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" },
-        { id: 24, name: "Espresso Doble", price: 2.00, image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop" },
-        { id: 25, name: "Mocha Especial", price: 4.00, image: "https://images.unsplash.com/photo-1578374173705-0a5c3e0b2d4e?w=400&h=300&fit=crop" },
-        { id: 26, name: "Té Verde Matcha", price: 3.50, image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" },
-        { id: 27, name: "Chocolate Caliente", price: 3.50, image: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&h=300&fit=crop" },
-        { id: 28, name: "Smoothie de Fresa", price: 4.50, image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop" },
-        { id: 29, name: "Jugo de Naranja Natural", price: 3.00, image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop" },
-        { id: 30, name: "Limonada Fresca", price: 2.50, image: "https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9d?w=400&h=300&fit=crop" }
+        { id: 21, name: "Mocaccino", price: 2.50, image: "https://i.pinimg.com/1200x/d6/b8/ec/d6b8ec52c915daa3d588cefdd47a3554.jpg" },
+        { id: 22, name: "Café negro", price: 1.50, image: "https://i.pinimg.com/1200x/17/bd/c8/17bdc8437fc78b9fce18e11b170421ad.jpg" },
+        { id: 23, name: "Té de canela", price: 1.25, image: "https://i.pinimg.com/736x/e4/28/3e/e4283e1329dc7389e571164591f2d935.jpg" },
+        { id: 24, name: "Cappuccino", price: 2.75, image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" },
+        { id: 25, name: "Limonada", price: 1.50, image: "https://i.pinimg.com/1200x/5e/d2/42/5ed242c6e1b94b61c9a9daac6a2e901f.jpg" },
+        { id: 26, name: "Té Frío", price: 1.50, image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" },
+        { id: 27, name: "Chocolate Caliente", price: 1.75, image: "https://i.pinimg.com/736x/03/89/6b/03896bfdd6aae501967a378097dcc135.jpg" },
+        { id: 28, name: "Café Latte", price: 2.50, image: "https://i.pinimg.com/1200x/d2/0c/e6/d20ce6b882f53f35c58738dab963434b.jpg" },
+        { id: 29, name: "Jugo de Naranja Natural", price: 1.99, image: "https://i.pinimg.com/1200x/9b/13/c5/9b13c540fb5fbba2be4efc7c0db35d8c.jpg" },
+        { id: 30, name: "Limonada Fresca", price: 1.99, image: "https://i.pinimg.com/1200x/ad/b6/73/adb673d4b3526a7cce289ce22eecdf7b.jpg" }
     ]
-};
+}
 
 let currentSlideIndex = 0;
 let carouselInterval;
@@ -61,6 +61,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function initializeApp() {
     console.log('Inicializando aplicación...');
+    
+    // Versión del código (cambia esto cada vez que edites productos)
+    const CODE_VERSION = '1.0';
+    const savedVersion = localStorage.getItem('bakeryVersion');
+    
+    // Si la versión cambió, limpiar localStorage
+    if (savedVersion !== CODE_VERSION) {
+        console.log('Nueva versión detectada, limpiando datos antiguos...');
+        localStorage.removeItem('bakeryProducts');
+        localStorage.setItem('bakeryVersion', CODE_VERSION);
+    }
     
     // Cargar productos desde localStorage o usar productos iniciales
     const savedProducts = localStorage.getItem('bakeryProducts');
