@@ -10,7 +10,7 @@ let products = {
 // Productos iniciales por categoría
 const initialProducts = {
     reposteria: [
-        { id: 1, name: "Cupcake de Vainilla", price: 3.50, image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400&h=300&fit=crop" },
+        { id: 1, name: "Cheesecake de Maracuyá", price: 11.99, image: "https://i.pinimg.com/736x/2f/da/39/2fda39f79e80a91d61e69e31bed31605.jpg" },
         { id: 2, name: "Cupcake de Chocolate", price: 3.50, image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&h=300&fit=crop" },
         { id: 3, name: "Cupcake Red Velvet", price: 4.00, image: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=400&h=300&fit=crop" },
         { id: 4, name: "Torta de Chocolate", price: 45.00, image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" },
